@@ -22,12 +22,16 @@ def choose_character(choices,screen = None):
         screen.blit(menu_text,menu_rect)
         pokemon_button = []
         current_pos = 100
+        ext_pos = 0
         for pokemon in choices:
             tmp_text = basicFont.render(pokemon,True,(255,255,255),(255,165,0))
             tmp_rect = tmp_text.get_rect()
-            tmp_rect.center = (200,current_pos)
+            tmp_rect.center = (200+ext_pos,current_pos)
             tmp_button = screen.blit(tmp_text,tmp_rect)
             current_pos += 50
+            if current_pos >= 550:
+                ext_pos += 150
+                current_pos = 100
             pokemon_button.append((tmp_button,pokemon))
         pygame.display.flip()
         chosen = False

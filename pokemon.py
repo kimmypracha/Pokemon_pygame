@@ -112,13 +112,17 @@ class Pokemon:
             screen.blit(option_text,option_rect)
             move_button = []
             current_pos = 150
+            ext_pos = 0
             for move in self.Moves:
                 tmp_text = basicFont.render(move,True,(255,255,255))
                 tmp_rect = tmp_text.get_rect()
-                tmp_rect.center = (current_pos,475)
+                tmp_rect.center = (current_pos,475+ext_pos)
                 tmp_button = screen.blit(tmp_text,tmp_rect)
                 move_button.append((tmp_button,move))
                 current_pos += 150
+                if current_pos >= 730:
+                    current_pos = 150
+                    ext_pos += 30
             pygame.display.flip()
             clicked = False
             while not clicked:
