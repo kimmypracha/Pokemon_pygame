@@ -1,0 +1,16 @@
+STATS = {
+    'Pikachu': {'Attack': 55, 'Defense': 40},
+    'Charizard': {'Attack': 84, 'Defense': 78},
+    'Squirtle': {'Attack': 48, 'Defense': 65},
+    'Jigglypuff': {'Attack': 45, 'Defense': 20},
+    'Gengar': {'Attack': 65, 'Defense': 60},
+    'Magnemite': {'Attack': 35, 'Defense': 70},
+    'Bulbasaur': {'Attack': 49, 'Defense': 49},
+    'Charmander': {'Attack': 52, 'Defense': 43},
+    'Beedrill': {'Attack': 90, 'Defense': 40},
+    'Golem': {'Attack': 120, 'Defense': 130},
+    'Dewgong': {'Attack': 70, 'Defense': 80},
+    'Hypno': {'Attack': 73, 'Defense': 70},
+    'Cleffa': {'Attack': 25, 'Defense': 28},
+    'Cutiefly': {'Attack': 45, 'Defense': 40},
+}
