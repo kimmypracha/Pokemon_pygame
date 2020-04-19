@@ -61,6 +61,9 @@ def start_game():
         enemy = generate_enemy()
         battle_mode(pokemon,enemy)
         game_over, choices = reset_game(pokemon,enemy,choices)
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                run = False    
 
 
 
