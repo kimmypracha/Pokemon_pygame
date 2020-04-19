@@ -49,8 +49,7 @@ class Pokemon:
 
     def critical_coeficient(self,screen=None):
         '''This method return 2 if the attack landed critical hit, otherwise return 1'''
-        #num = random.randint(0,511)
-        num = self.Speed
+        num = random.randint(0,511)
         if num <= self.Speed:
             print("Critical hit!")
             if screen:
