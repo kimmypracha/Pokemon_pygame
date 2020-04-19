@@ -33,6 +33,8 @@ def choose_character(choices,screen = None):
         chosen = False
         while not chosen:
             for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    exit()
                 if pygame.mouse.get_pressed()[0]:
                     pos = pygame.mouse.get_pos()
                     for button,name in pokemon_button:

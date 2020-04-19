@@ -124,7 +124,7 @@ class Pokemon:
             while not clicked:
                 for event in pygame.event.get():
                     if event.type == pygame.QUIT:
-                        clicked = False
+                        exit()
                     if pygame.mouse.get_pressed()[0]:
                         pos = pygame.mouse.get_pos()
                         for button,name in move_button:
@@ -192,7 +192,7 @@ class Pokemon:
                     while not clicked:
                         for event in pygame.event.get():
                             if event.type == pygame.QUIT:
-                                clicked = False
+                                exit()
                             if event.type == pygame.KEYDOWN or pygame.mouse.get_pressed()[0]:
                                 clicked = True
         if self.HP <= 0:
@@ -214,7 +214,7 @@ class Pokemon:
                 while not clicked:
                     for event in pygame.event.get():
                         if event.type == pygame.QUIT:
-                            clicked = False
+                            exit()
                         if event.type == pygame.KEYDOWN or pygame.mouse.get_pressed()[0]:
                             clicked = True 
         

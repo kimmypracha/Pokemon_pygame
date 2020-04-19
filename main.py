@@ -63,7 +63,7 @@ def start_game():
         game_over, choices = reset_game(pokemon,enemy,choices)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                run = False    
+                exit()   
 
 
 
